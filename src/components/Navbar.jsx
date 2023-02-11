@@ -1,13 +1,11 @@
-export default function Navbar() {
-  const links = [
-    { label: "Acerca de mi" },
-    { label: "Portfolio" },
-    { label: "Contacto" },
-  ];
-
+export default function Navbar({ links }) {
   const renderedLinks = links.map((link) => (
-    <li key={link.label}>
-      <a className="cursor-pointer hover:underline">{link.label}</a>
+    <li
+      key={link.label}
+      className="cursor-pointer hover:underline"
+      onClick={link.onClick}
+    >
+      {link.label}
     </li>
   ));
 
