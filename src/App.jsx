@@ -9,6 +9,7 @@ import { GrGithub, GrLinkedin, GrMail } from "react-icons/gr";
 import { AiFillFilePdf } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
 import alkeflixImage from "./assets/alkeflix.png";
+import tremontImage from "./assets/tremont.png";
 
 export default function App() {
   const aboutElem = useRef(null);
@@ -66,6 +67,14 @@ export default function App() {
       title: "Alkeflix",
       description:
         "Página que simula ser un catálogo de películas. Se permite loguearse con credenciales y manejar una sección de 'Favoritos'.",
+    },
+    {
+      ghLink: "https://github.com/venutti/tremont-resto",
+      link: "https://venutti.github.io/tremont-resto/",
+      img: tremontImage,
+      title: "Tremont",
+      description:
+        "Página que funciona como un menú digital, totalmente responsivo y con animaciones.",
     },
   ];
 
