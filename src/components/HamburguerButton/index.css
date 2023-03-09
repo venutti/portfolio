@@ -1,0 +1,78 @@
+.hamburguer-button {
+  position: relative;
+  display: block;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hamburguer-button:focus {
+  outline: none;
+}
+
+.ham {
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ham.active {
+  transform: rotate(45deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #fff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham .top {
+  stroke-dasharray: 40 139;
+}
+.ham .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham.active .bottom {
+  stroke-dashoffset: -138px;
+}
+/*
+.hamburguer-line:nth-child(1) {
+  top: 0;
+}
+
+.hamburguer-line:nth-child(2),
+.hamburguer-line:nth-child(3) {
+  top: 9px;
+}
+
+.hamburguer-line:nth-child(2) {
+  transform: translateY(-3px);
+}
+
+.hamburguer-line:nth-child(3) {
+  transform: translateY(3px);
+}
+
+.hamburguer-button.open .hamburguer-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburguer-button.open .hamburguer-line:nth-child(2) {
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.hamburguer-button.open .hamburguer-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+*/
+.hamburguer-button.open .hamburguer-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
