@@ -1,0 +1,5 @@
+.title {
+  font-weight: 700;
+  font-size: var(--fs-lg);
+  line-height: 1.3;
+}

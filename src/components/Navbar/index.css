@@ -1,0 +1,31 @@
+.nav {
+  padding: 10px;
+}
+@media (min-width: 490px) {
+  .nav {
+    padding: 20px;
+  }
+}
+
+.nav__icon {
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: var(--fs-lg);
+}
+@media (min-width: 490px) {
+  .nav__icon {
+    display: none;
+  }
+}
+
+.nav__links {
+  display: none;
+  justify-content: center;
+  margin-top: 10px;
+}
+@media (min-width: 490px) {
+  .nav__links {
+    display: flex;
+  }
+}

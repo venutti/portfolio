@@ -1,14 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --ff-body: "Work Sans", sans-serif;
+  --ff-decored: "Fjalla One", sans-serif;
 
-.h100 {
-  height: calc(100 * var(--vh));
+  --fs-sm: 1rem;
+  --fs-md: 1rem;
+  --fs-lg: 2.3rem;
+
+  --primary: 29, 116, 138;
 }
 
-.bg-image {
-  background-image: url("./assets/code-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media (min-width: 720px) {
+  :root {
+    --fs-md: 1.2rem;
+    --fs-lg: 3.3rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100svh;
+  background-color: #181a1d;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  overflow-x: hidden;
+
+  color: aliceblue;
+  font-size: var(--fs-sm);
+  font-family: "Work Sans", sans-serif;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.mb {
+  margin-bottom: 20px;
 }

@@ -1,0 +1,12 @@
+.link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--fs-sm);
+  color: inherit;
+  padding: 10px;
+}
+
+.link.active {
+  text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+.alert {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.alert__content {
+  max-width: 35ch;
+  margin: 0 auto;
+  text-align: center;
+  font-size: var(--fs-md);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
