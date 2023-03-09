@@ -11,14 +11,6 @@ import sendingEmail from "../../assets/sendimg-email.svg";
 const Contact = () => {
   const [state, handleSubmit] = useForm("xnqyznaq");
 
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    setName("");
-    setEmail("");
-    setMessage("");
-    handleSubmit();
-  };
-
   if (state.succeeded) {
     return (
       <Alert>
@@ -37,7 +29,7 @@ const Contact = () => {
         <ShadowText>CONTACTO</ShadowText>
       </Title>
       <VisibleTag tag="form">
-        <form className="form" onSubmit={handleFormSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
           <div className="form-control">
             <label htmlFor="name">Nombre completo:</label>
             <input required autoComplete="off" name="name" id="name" />
