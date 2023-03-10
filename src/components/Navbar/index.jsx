@@ -30,6 +30,10 @@ const Navbar = () => {
     setOpen(!open);
   };
 
+  const handleMenuClick = () => {
+    setOpen(false);
+  };
+
   const renderedItems = routes.map((route) => (
     <li key={route.label}>
       <StyledLink href={route.link}>{route.label}</StyledLink>
@@ -48,7 +52,9 @@ const Navbar = () => {
       {!isFull && (
         <HamburguerButton open={open} onClick={handleHamburguerClick} />
       )}
-      <ul className={navClass}>{renderedItems}</ul>
+      <ul className={navClass} onClick={handleMenuClick}>
+        {renderedItems}
+      </ul>
     </nav>
   );
 };
