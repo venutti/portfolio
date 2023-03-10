@@ -3,6 +3,7 @@ import VisibleTag from "../../components/VisibleTag";
 import Title from "../../components/Title";
 import ShadowText from "../../components/ShadowText";
 import Button from "../../components/Button";
+import { Link } from "wouter";
 
 const Main = () => {
   return (
@@ -18,7 +19,9 @@ const Main = () => {
 
         <VisibleTag tag="p">Front End Developer</VisibleTag>
       </VisibleTag>
-      <Button className="main__button">Contactame!</Button>
+      <Link href="/contact">
+        <Button className="main__button">Contactame!</Button>
+      </Link>
     </main>
   );
 };
