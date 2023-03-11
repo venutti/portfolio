@@ -19,6 +19,7 @@ const Main = () => {
 
         <VisibleTag tag="p">Front End Developer</VisibleTag>
       </VisibleTag>
+
       <Link href="/contact">
         <Button className="main__button">Contactame!</Button>
       </Link>

@@ -1,3 +1,6 @@
+/*
+GENERALIDADES
+*/
 :root {
   --ff-body: "Work Sans", sans-serif;
   --ff-decored: "Fjalla One", sans-serif;
@@ -8,23 +11,19 @@
 
   --primary: 29, 116, 138;
 }
-
 @media (min-width: 720px) {
   :root {
     --fs-md: 1.2rem;
     --fs-lg: 3.3rem;
   }
 }
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-
   margin: 0;
   padding: 0;
 }
-
 body {
   min-height: 100svh;
   background-color: #181a1d;
@@ -35,53 +34,47 @@ body {
   font-size: var(--fs-sm);
   font-family: "Work Sans", sans-serif;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+.mb {
+  margin-bottom: 20px;
+}
 #root {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
-ul {
-  list-style: none;
-}
-
-.mb {
-  margin-bottom: 20px;
-}
-
+/*
+PAGE STYLES
+*/
 .page {
   flex-grow: 1;
   display: flex;
 }
-
 .page-enter {
   opacity: 0;
   transform: scale(1.1);
 }
-
 .page-enter-active {
   opacity: 1;
   transform: scale(1);
   transition: opacity 300ms, transform 300ms;
 }
-
 .page-exit {
   opacity: 1;
   transform: scale(1);
 }
-
 .page-exit-active {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
 }
-
 .page > * {
   flex-grow: 1;
 }
