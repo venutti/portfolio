@@ -1,17 +1,16 @@
 import "./index.css";
 
-const VisibleTag = ({
-  tag,
-  closeTag = true,
-  className,
-  children,
-  center = false,
-}) => {
+const VisibleTag = ({ tag, closeTag = true, className, children }) => {
+  let classContainer = "tag";
+  if (className) classContainer += " " + className;
+
   return (
-    <div className={`tag__container ${center ? "center" : ""}`}>
-      <p className="tag">{`<${tag}>`}</p>
-      <div className={`tag__content ${className || ""}`}>{children}</div>
-      {closeTag && <p className="tag">{`</${tag}>`}</p>}
+    <div className={classContainer}>
+      <div className="tag__content">
+        <div className="tag__label">{`<${tag}>`}</div>
+        {children}
+        {closeTag && <div className="tag__label">{`</${tag}>`}</div>}
+      </div>
     </div>
   );
 };

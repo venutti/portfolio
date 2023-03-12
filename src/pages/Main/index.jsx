@@ -17,7 +17,9 @@ const Main = () => {
           <br /> desarrollador web
         </Title>
 
-        <VisibleTag tag="p">Front End Developer</VisibleTag>
+        <VisibleTag tag="p">
+          <p>Front End Developer</p>
+        </VisibleTag>
       </VisibleTag>
 
       <Link href="/contact">

@@ -17,7 +17,7 @@ const Portfolio = () => {
         <ShadowText>PORTFOLIO</ShadowText>
       </Title>
 
-      <VisibleTag tag="grid" center>
+      <VisibleTag tag="grid" className="portfolio__container">
         <div className="portfolio__grid">{renderedProjects}</div>
       </VisibleTag>
     </section>

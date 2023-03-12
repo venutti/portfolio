@@ -1,5 +1,5 @@
 /* TAG */
-.tag__container {
+/* .tag__container {
   max-width: fit-content;
   padding-left: 20px;
   padding-right: 20px;
@@ -21,4 +21,22 @@
 .tag__content ~ .tag {
   text-align: end;
   transform: translateX(20px);
+} */
+
+.tag {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.tag__label {
+  font-family: "Fjalla One", sans-serif;
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  color: rgb(var(--primary));
+}
+.tag__label:nth-of-type(2) {
+  text-align: end;
+}
+.tag__content > :not(.tag__label) {
+  padding: 5px 20px;
 }
