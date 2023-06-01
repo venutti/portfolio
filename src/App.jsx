@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 
 import { Router, useLocation } from "wouter";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
+import GithubIcon from "./components/GithubIcon";
 
 const routes = [
   { path: "/", component: <Main />, nodeRef: createRef() },
@@ -17,7 +18,6 @@ const routes = [
 
 export default function App() {
   const [location] = useLocation();
-  // Obtiene el componente renderizado y su nodo
   const { component, nodeRef } = routes.find(
     (route) => route.path === location
   );
@@ -27,11 +27,8 @@ export default function App() {
       <Navbar />
       <SwitchTransition>
         <CSSTransition
-          // la key evidencia a lo que hay que prestar atención
           key={location}
-          // ref para evitar un cierto error
           nodeRef={nodeRef}
-          // tiempo entre statING y statED
           timeout={300}
           classNames="page"
         >
@@ -42,6 +39,7 @@ export default function App() {
           }
         </CSSTransition>
       </SwitchTransition>
+      <GithubIcon />
     </Router>
   );
 }
