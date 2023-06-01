@@ -1,0 +1,10 @@
+.icon {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: max(20px, 5vw);
+
+  display: block;
+  font-size: 60px;
+  color: rgb(var(--primary));
+}
